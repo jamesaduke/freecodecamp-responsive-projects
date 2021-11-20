@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Lora:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro{
+    background-color: black;
+    min-height: 100vh;
+}
+#title{
+    font-family: 'Lora', 'serif';
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+#description{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap:10px;
+    justify-self: center;
+}
+
+.quote{
+    width: auto;
+    color: white;
+    align-self: end;
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+img{
+    border-radius: 9px;
+}
+
