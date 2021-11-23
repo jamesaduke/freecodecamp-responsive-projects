@@ -23,6 +23,8 @@
     grid-template-columns: 2fr 1fr;
     grid-column-gap:10px;
     justify-self: center;
+    margin-top: 8em;
+
 }
 
 .quote{
@@ -31,10 +33,28 @@
     align-self: end;
     text-align: center;
     font-size: 2.3em;
+    padding-bottom: 2.8em;
     margin-bottom: 20px;
 }
 
 img{
     border-radius: 9px;
+}
+
+/* Tribute Section */
+#tribute-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    width: 70%;
+}
+
+p{
+    font-family: 'Times New Roman';
+    line-height: 1.5em;
+    font-size: 1.2em;
+    color: #515151;
 }
 
