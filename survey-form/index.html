@@ -17,8 +17,40 @@
 
          <!-- Form section -->
          <form action="" id="survey-form">
-             <label for="name">Name</label>
+            <label for="name" id="name-label">Name</label>
             <input type="text" id="name">
+
+            <label for="name" id="email-label">Email</label>
+            <input type="email" name="" id="email">
+
+            <label for="number" id="number-label">Number</label>
+            <input type="number" name="" id="number" min="0" max="200">
+
+            <label for="" id="dropdown"></label>
+            <select name="" id="">
+                <option value="">Select an option</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+            </select>
+
+            <label for="radio">
+                <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+                <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+            </label>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+
+            <textarea name="comments" id="" cols="30" rows="10">
+                Comments
+            </textarea>
+
+            <button type="submit" id="sumbit">Submit</button>
          </form>
     </main>
 
