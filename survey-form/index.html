@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
     <title>Survey Form</title>
 </head>
@@ -17,22 +18,31 @@
 
          <!-- Form section -->
          <form action="" id="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" id="name">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
 
-            <label for="name" id="email-label">Email</label>
-            <input type="email" name="" id="email">
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
 
-            <label for="number" id="number-label">Number</label>
-            <input type="number" name="" id="number" min="0" max="200">
 
-            <label for="" id="dropdown"></label>
+            <div class="form-group">
+                <label for="age" id="age-label">Phone number</label>
+                <input type="number" id="age" class="form-control" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <p>Where did you here about the event ?</p>
             <select name="" id="">
                 <option value="">Select an option</option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
                 <option value="">Option 3</option>
             </select>
+            </div>
 
             <label for="radio">
                 <input id="indoor" type="radio" name="indoor-outdoor">Indoor
@@ -53,6 +63,5 @@
             <button type="submit" id="sumbit">Submit</button>
          </form>
     </main>
-
 </body>
 </html>
