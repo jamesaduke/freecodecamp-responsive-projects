@@ -10,58 +10,101 @@
 </head>
 <body>
 
-    <main>
+    <div class="container">
          <header>
              <h1 id="title">Post Event Survey</h1>
              <p id="description">Please answer the following questions:</p>
          </header>
 
          <!-- Form section -->
-         <form action="" id="survey-form">
-            <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
-            </div>
+         <div class="form-center">
+            <form action="" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
 
-            <div class="form-group">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-            </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
 
+                <div class="form-group">
+                    <label id="age-label" for="number">
+                        Age
+                        <span class="clue">(optional)</span>
+                    </label>
+                    <input type="number" id="number"  class="form-control" min="10" max="100" placeholder="Age">
+                </div>
 
-            <div class="form-group">
-                <label for="age" id="age-label">Phone number</label>
-                <input type="number" id="age" class="form-control" placeholder="Enter your phone number" required>
-            </div>
+                <div class="form-group">
+                    <p>Where did you here about the event ?</p>
+                        <select name="" id="dropdown" class="form-control">
+                            <option disabled selected value>Select an option</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="linkedin">LinkedIn</option> 2</option>
+                            <option value="friend">Friend</option>
+                        </select>
+                </div>
 
-            <div class="form-group">
-                <p>Where did you here about the event ?</p>
-            <select name="" id="">
-                <option value="">Select an option</option>
-                <option value="">Option 1</option>
-                <option value="">Option 2</option>
-                <option value="">Option 3</option>
-            </select>
-            </div>
+                <div class="form-group">
+                    <p>Which session did you like the most? </p>
 
-            <label for="radio">
-                <input id="indoor" type="radio" name="indoor-outdoor">Indoor
-                <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
-            </label>
+                    <label>
+                        <input
+                          name="software_session"
+                          value="software"
+                          type="radio"
+                          class="radio-input"
+                          checked
+                        />Software</label
+                      >
+                    <label>
+                        <input
+                          name="hardware_session"
+                          value="hardware"
+                          type="radio"
+                          class="radio-input"
+                        />Hardware</label>
+                </div>
+                <div class="form-group">
+                    <p>
+                        What would you like to see improved ?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
 
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br>
+                    <label
+                    ><input
+                        name="prefer"
+                        value="speakers"
+                        type="checkbox"
+                        class="checkbox-input"/>Speakers</label>
 
-            <textarea name="comments" id="" cols="30" rows="10">
-                Comments
-            </textarea>
+                    <label
+                    ><input
+                        name="prefer"
+                        value="sessions"
+                        type="checkbox"
+                        class="checkbox-input"/>Sessions</label>
 
-            <button type="submit" id="sumbit">Submit</button>
-         </form>
-    </main>
+                    <label
+                    ><input
+                        name="prefer"
+                        value="venue"
+                        type="checkbox"
+                        class="checkbox-input"/>Venue</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Any other suggestions or comments are welcome.</p>
+                    <textarea name="comments" id="comments" class="textarea-input" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="sumbit" class="submit-btn">Submit</button>
+                </div>
+             </form>
+         </div>
+    </div>
 </body>
 </html>
