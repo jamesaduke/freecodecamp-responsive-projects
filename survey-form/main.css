@@ -32,15 +32,10 @@ body::before{
     background-size: cover;
     background-position: center;
 }
-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 /* Header Section */
 header{
-    width: 100%;
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
 }
 
 #title{
@@ -64,16 +59,26 @@ header{
     width: 100%;
     margin: 3.25rem auto 0 auto;
 }
+@media(min-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+}
 
-/* p{
-    font-size: 1.1rem;
-} */
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+
+
 /* Form Section */
 form{
     background: #1B1B50;
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
-    min-width: 720px;
+
 }
 
 label, p{
@@ -89,14 +94,10 @@ label, p{
     font-size: 0.8rem;
     color: gray;
 }
-.form-center{
-    display: flex;
-    justify-content: center;
-}
 
 .form-group {
     margin: 0 auto 1.25rem auto;
-    padding:0.4rem 1rem;
+    padding:0.25rem;
 }
 
 .form-control{
