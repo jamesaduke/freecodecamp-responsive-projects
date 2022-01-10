@@ -21,30 +21,33 @@
             <form action="" id="survey-form">
                 <div class="form-group">
                     <label for="name" id="name-label">Name</label>
-                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required/>
                 </div>
 
                 <div class="form-group">
                     <label for="email" id="email-label">Email</label>
-                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required/>
                 </div>
 
                 <div class="form-group">
-                    <label id="age-label" for="number">
+                    <label id="number-label" for="number">
                         Age
                         <span class="clue">(optional)</span>
                     </label>
-                    <input type="number" id="number"  class="form-control" min="10" max="100" placeholder="Age">
+                    <input type="number" id="number-label"  class="form-control" min="10" max="100" placeholder="Age"/>
                 </div>
 
                 <div class="form-group">
-                    <p>Where did you here about the event ?</p>
-                        <select name="" id="dropdown" class="form-control">
-                            <option disabled selected value>Select an option</option>
-                            <option value="twitter">Twitter</option>
-                            <option value="linkedin">LinkedIn</option> 2</option>
-                            <option value="friend">Friend</option>
-                        </select>
+                    <p>
+                      What is your favorite feature of freeCodeCamp?
+                    </p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                      <option disabled selected value>Select an option</option>
+                      <option value="challenges">Challenges</option>
+                      <option value="projects">Projects</option>
+                      <option value="community">Community</option>
+                      <option value="openSource">Open Source</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -52,7 +55,7 @@
 
                     <label>
                         <input
-                          name="software_session"
+                          name="session"
                           value="software"
                           type="radio"
                           class="radio-input"
@@ -61,7 +64,7 @@
                       >
                     <label>
                         <input
-                          name="hardware_session"
+                          name="session"
                           value="hardware"
                           type="radio"
                           class="radio-input"

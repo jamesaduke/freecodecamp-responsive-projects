@@ -25,9 +25,9 @@ body::before{
     background: #1B1B50;
     background-image: linear-gradient(
         115deg,
-        rgba(58, 58, 158, 0.8),
-        rgba(136, 136, 206, 0.7)
-    ),url('/images/medium-friends.jpg');
+        rgba(158, 140, 58, 0.8),
+        rgba(206, 187, 136, 0.7)
+    ),url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@ main{
     justify-content: center;
 }
 /* Header Section */
-.header{
+header{
     width: 100%;
 }
 
@@ -52,10 +52,12 @@ main{
 }
 
 #description{
-    font-size: 1.2rem;
+    display: block;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 1rem;
+    font-weight: 200;
 }
 
 .container{
@@ -79,7 +81,7 @@ label, p{
     align-items: center;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .clue{
